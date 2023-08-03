@@ -4,14 +4,10 @@ package MrkimRefactoring.Entity;
 
 import MrkimRefactoring.View.View;
 
-import java.util.ArrayList;
-
 public class Entity {
     private int id;
     private String saying;
     private String writer;
-
-
 
     public int getId() {
         return id;
