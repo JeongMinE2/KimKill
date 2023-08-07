@@ -5,7 +5,19 @@ package MrkimRefactoring.MrScanner;
 import java.util.Scanner;
 
 public class MrScanner {
-    Scanner sc = new Scanner(System.in);
+    private Scanner sc = new Scanner(System.in);
+
+    private void MrScanner() {
+
+    }
+
+    private static class InnerMrScanner {
+        private static final MrScanner Instance = new MrScanner();
+    }
+
+    public static MrScanner getInstance() {
+        return InnerMrScanner.Instance;
+    }
 
     public String input() {
 
